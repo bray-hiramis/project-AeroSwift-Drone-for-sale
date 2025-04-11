@@ -1,0 +1,290 @@
+/* CSS reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Special Gothic", sans-serif;
+}
+
+body {
+    background-color: #D6CAB9;
+}
+
+/* Utilities */
+.primary-color {
+    color: #4B5563;
+}
+.secondary-color {
+    color: #D6CAB9;
+}
+
+/* Navigation section */
+.hero .main-nav {
+    display: flex;
+    justify-content: space-between; /*x axis*/
+    align-items: center; /*y-axis, Only works when display flex is activated*/
+    height: 5vh;
+    /* padding: 20px 30px; */
+    background-color: #F3F4F6;
+}
+
+/* Logo */
+.logo {
+    font-family: "Bytesized", sans-serif;
+    cursor: pointer;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.logo:hover {
+    border-right: 2px solid #4B5563;
+}
+
+.hero .main-nav ul {
+    display: flex;
+}
+
+.hero .main-nav ul li {
+    list-style: none;
+}
+
+.hero .main-nav ul li a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #4B5563;
+    font-weight: bold;
+}
+
+.hero .main-nav ul li a:hover {
+    background-color: #D6CAB9;
+    color: #27313f;
+    border-bottom: 2px coral solid;
+}
+
+.hero .main-nav ul li a:active {
+    background-color: #928777;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://cdn.pixabay.com/photo/2022/06/13/09/11/dji-mini-3-pro-7259551_1280.jpg') no-repeat center top/cover;
+    height: 50vh;
+    text-align: center;
+    padding-top: 80px;
+    line-height: 1.5;
+}
+
+.hero-title {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 5px 5px black;
+}
+
+.hero-description {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 3px 3px black;
+    margin-bottom: 25px;
+}
+
+.hero-button {
+    cursor: pointer;
+    padding: 15px 70px;
+    border: 2px coral solid;
+    background-color: #928777;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hero-button:hover {
+    background-color: #D6CAB9;
+    border: 2px black solid;
+    color: #928777;
+}
+
+/* Features */
+#feature {
+    border-bottom: 5px coral solid;
+}
+
+.features .article-1 {
+    display: flex;
+}
+.features .article-2 {
+    display: flex;
+}
+.features .article-3 {
+    display: flex;
+}
+
+.features .features-img {
+    height: 500px;
+    width: 50%;
+}
+
+.features .features-desc {
+    height: 100%;
+    width: 50%;
+    align-self: center;
+    padding: 30px 50px;
+    line-height: 2;
+}
+
+.features-desc h3 {
+    font-size: 40px;
+}
+
+.features-desc p {
+    font-size: 22px;
+    color: #4B5563;
+}
+
+/* features images */
+.features .article-1 .features-img {
+    background: url('https://cdn.pixabay.com/photo/2018/06/04/14/31/drone-3453361_1280.jpg') no-repeat center center/cover;
+}
+
+.features .article-2 .features-img {
+    background: url('https://cdn.pixabay.com/photo/2019/11/14/19/41/forest-4626959_1280.jpg') no-repeat center center/cover;
+}
+
+.features .article-3 .features-img {
+    background: url('https://cdn.pixabay.com/photo/2010/12/13/09/51/battery-1821_1280.jpg') no-repeat center center/cover;
+}
+
+/* Testimonial section */
+.testimonials {
+    width: 100%;
+    height: 20vh;
+    border-bottom: 5px coral solid;
+    padding: 0 100px
+}
+
+.testimonials .testimonial-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding: 0 50px;
+}
+
+.testimonials .testimonial-content img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.testimonials .testimonial-content p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 60px;
+    font-style: italic;
+    color: #4B5563;
+}
+
+/* Pricing section */
+.price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    background: #4B5563;
+    background: linear-gradient(90deg, rgba(75, 85, 99, 1) 0%, rgba(92, 156, 145, 1) 50%, rgba(214, 202, 185, 1) 100%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 200px;
+    background-color: #D6CAB9;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+}
+
+.card h4 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.card .buy {
+    cursor: pointer;
+    padding: 15px 30px;
+    background: #4B5563;
+    background: linear-gradient(90deg, rgba(75, 85, 99, 1) 0%, rgba(92, 156, 145, 1) 50%, rgba(214, 202, 185, 1) 100%);
+    border-radius: 10px;
+}
+
+.card .buy a {
+    color: black;
+    text-decoration: none;
+}
+
+.card-2 {
+    height: 250px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4B5563;
+    color: #fff;
+}
+
+.footer-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+footer .socials,
+footer .contact {
+    width: 50%;
+}
+
+footer h3 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+footer i {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 0 20px;
+}
+
+footer i:hover {
+    color: coral;
+}
+
+.contact {
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: coral;
+}
+
+.rights {
+    text-align: center;
+    padding-bottom: 30px;
+}
